@@ -1,0 +1,16 @@
+<div class="thumbnail row">
+    <div class="col-4 video">
+        <!-- <iframe [src]=" result.thumbnailUrl | safe"></iframe> -->
+        <iframe width="360" height="250" [src]="'https://www.youtube.com/embed/' + result.id | safe"></iframe>
+    </div>
+    <div class="caption col-8">
+        <h6>{{result.title}}</h6>
+        <p class="caption_date">{{result.publishedAt | date}} </p>
+
+        <h6>{{result.channelTitle}}</h6>
+        <p class="caption_description">{{result.description}}</p>
+        <p><a href=" {{result.videoUrl}}" class="btn btn-default" role="button">
+        Video Full Detail</a>
+        </p>
+    </div>
+</div>
